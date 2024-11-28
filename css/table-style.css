@@ -1,0 +1,50 @@
+@font-face {
+font-family: ‘kollektifregular’;
+src: url(‘kollektif-webfont.woff2’) format(‘woff2’),
+url(‘kollektif-webfont.woff’) format(‘woff’);
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+	
+	font: 13px sans-serif;
+}
+
+table {
+   width: 100%;
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+thead{
+  text-align: center;
+}
+
+th, td {
+  /*white-space: nowrap;*/
+  /*text-align: left;*/
+  overflow: hidden;
+  border: 1px solid gray;
+   
+}
+
+/**estilo cebra**/
+
+/*table tr {
+    background-color: #eee;
+}
+ 
+table tr:nth-child(2) {
+    background-color: green;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+table tr td{
+	
+}*/

@@ -1,0 +1,268 @@
+
+
+/*menu*/
+body{
+    margin: 0px;
+    background: #fff;
+}
+
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #049776;
+    border-bottom: 1px solid #29487d;
+    height: 45px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+.name-user label{
+  font-size: 16px;
+  color: black;
+}
+.menu-main a i{
+    padding: 5px;
+    color: #315B33;
+}
+/*.menu-main a.active{
+    background-color: #29487d;
+}*/
+#sub-hide{
+  background-color:  #049776;
+  display: flex;
+  display: none;
+  float: right;
+  width: 20%;
+  text-align: center;
+  margin: 0px auto;
+}
+#sub-hide a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+}
+
+@media (max-width: 768px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #29487d;
+    }
+
+}
+/*************************/
+/*ventana pop up*/
+#popup-compras,#popup-cajas, #popup-ingreso, #popup-egreso, #popup-listado-cajas {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+#popup-compra-venta,#popup-comprobante-tr, #content-op{
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+#popup-ventana-listado{
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+.content-popup-ventana {
+  margin:0px auto;
+  margin-top:120px;
+  position:relative;
+  padding:10px;
+  width:75%;
+  min-height:50%;
+  border-radius:4px;
+  background-color:#FFFFFF;
+  box-shadow: 10px 10px 2px 5px #666666;
+}
+#popup-fondos, #popup-transferencia{
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+
+.content-popup {
+  margin:0px auto;
+  margin-top:120px;
+  position:relative;
+  width:40%;
+  min-height: 200px;
+  /*border-radius: 12px 12px 12px 12px;*/
+  background-color:#FFFFFF;
+  border: 3px solid #049776;
+  /*box-shadow: 10px 10px #666666;*/
+}
+
+#content-comprobante-tr, #info-op{
+  margin:0px auto;
+  margin-top:120px;
+  position:relative;
+  width:40%;
+  min-height: 40px;
+  background-color:#FFFFFF;
+  border: 3px solid #049776;
+  text-align: center;
+}
+.button-close{
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.modal-info{
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.modal-info ul li{
+  list-style: none;
+}
+.modal-info ul li a {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}
+.header-modal {
+ 
+  width: 100%;
+  height: 40px;
+  background-color:  #049776;
+  text-align: center;
+  padding: 7px 100px;
+ 
+}
+
+.header-modal label{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+
+}
+
+/*.center{
+    background:green;
+    margin:0 auto; 
+   display:inline-block
+}*/
+
+.plan-cuentas{
+  width: 98%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border:2px solid #049776;
+  max-height: 304px;
+  overflow-y: scroll;
+  overflow-x: 0;
+}
+#op-pc {
+    display: none;
+    width: 45%;
+    height: 80%;
+    margin: 0 auto;
+    border:3px solid #049776; 
+    padding: 4px 4px;
+}
+#header-op {
+    height: 45%;
+    background-color:#049776;
+}
+#left {
+    width: 50%;
+    float: left;
+    min-height:150px;
+}
+#right {
+    width: 50%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    float: right;
+    border:2px solid #049776;
+    min-height:150px;
+}
+#footer-op {
+    clear: both;
+    height: 52px;
+    padding-top: 5px;
+    border:2px solid #049776;
+}
+
+#popup-orden-pago{
+
+}
+/*modal fondo*/
+.popup-overlay { /*fondo oscuro*/
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display:none;
+  background-color: #777777;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+input, select{
+  border-radius: 4px 4px 4px 4px;
+  border-color:  #049776;
+  width: 32%;
+  height: 10%;
+  font-size: 15px;
+}
+label, strong{
+  font-size: 13px;
+}
+
+input[type=checkbox]{
+  display: block;
+}
+#cantidad-resultado{
+  background: red;
+}
+.aviso{
+  margin:0px auto;
+  position:relative;
+  width:100%;
+  min-height: 30%;
+  display: none;
+}
+.aviso a{
+  text-decoration-line: none;
+}

@@ -1,0 +1,73 @@
+div{
+	width: 200px;
+	padding: 25px 0;
+	margin: 0;
+}
+
+.A{
+	background: red;
+}
+
+.B{
+	background: blue;
+}
+
+#flotante{
+	overflow: hidden;
+	width: 100%; /*Tamaño definido */
+}
+
+#flotante .A, #flotante .B{
+	float: left;
+}
+
+#bloque{
+	width: 100%;
+}
+
+#bloque .A, #bloque .B{
+	display: inline-block;
+}
+
+#tabla{
+	width: 100%;
+}
+
+#tabla .A, #tabla .B{
+	display: table-cell;
+}
+
+#flexStart {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+#flexEnd {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+#flexCenter {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#flexAround {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#posicion{
+	position: relative;
+	padding: 0;
+}
+
+#posicion .B{
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
